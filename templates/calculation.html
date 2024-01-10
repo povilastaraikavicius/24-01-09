@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skaičiavimai</title>
+</head>
+
+<body>
+    <div style="float: left; width: 50%;">
+        <h1>Skaičiavimai: ==2</h1>
+        {% for x in range(50) %}
+        {% if x % 2 == 0 %}
+        <p>{{ x }}</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <div style="float: right; width: 50%;">
+        <h1>Skaičiavimai: !=2</h1>
+        {% for x in range(50) %}
+        {% if x % 2 != 0 %}
+        <p>{{ x }}</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+</body>
+
+</html>
