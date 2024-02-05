@@ -2,9 +2,15 @@
 {% block content %}
 <form action="#" method="post">
     <p>Vardas:</p>
-    <p><input type="text" name="vardas" /></p>
+    <p><input type="text" name="name" /></p>
+    <p>El. paštas:</p>
+    <p><input type="text" name="email" /></p>
+    <p>Žinutė:</p>
+    <p><input type="text" name="message" /></p>
     <p><input type="submit" value="submit" /></p>
 </form>
 
-
+{% if email_taken %}
+<p style='color:rgb(255, 0, 0);'>email is olredy taken</p>
+{% endif %}
 {% endblock %}
